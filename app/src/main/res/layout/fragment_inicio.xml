@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94E833"
+    tools:context=".Fragmentos.InicioFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edTextoInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/texto_editTextInicio"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edNumeroInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/txto_EditTextNumInicio"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/idBotonInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#95DC43"
+            android:text="@string/txtBotonInicio"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
