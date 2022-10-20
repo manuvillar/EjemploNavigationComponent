@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/finalFragment"
-        android:name="com.example.navigationcomponent.FinalFragment"
+        android:name="com.example.navigationcomponent.Fragmentos.FinalFragment"
         android:label="fragment_final"
         tools:layout="@layout/fragment_final" >
         <action
