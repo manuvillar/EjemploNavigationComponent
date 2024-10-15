@@ -24,7 +24,7 @@ public class SegundoFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentSegundoBinding.inflate(inflater, container, false);
@@ -43,7 +43,7 @@ public class SegundoFragment extends Fragment {
             SegundoFragmentArgs args = SegundoFragmentArgs.fromBundle(getArguments());
             //Los sacamos de este Bundle.
             String texto = args.getTexto();
-            Integer numero = args.getNumero();
+            int numero = args.getNumero();
 
             binding.TextViewTexto.setText("El texto es:"+ texto);
             binding.TextViewNumero.setText("El número es: "+ numero);
